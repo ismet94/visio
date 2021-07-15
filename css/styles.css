@@ -23,10 +23,12 @@ nav {
 }
 
 
+
 .vis-main {
   display: flex;
   height: auto;
 }
+
 
 .vis-main-para {
   width: 70%;
