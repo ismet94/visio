@@ -126,7 +126,7 @@ a.vis-sec-nav-btn-right {
 
 section.vis-team-container {
   background: #061C2C;
-  display: block;
+  display: flex;
   padding: 30px 5px;
   margin: 50px 0px;
 }
