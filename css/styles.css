@@ -129,10 +129,22 @@ section.vis-team-container {
   display: flex;
   padding: 30px 5px;
   justify-content: center;
+  margin: 50px 0px 0px 0px;
+}
+
+section.vis-team-container2 {
+  background: #061C2C;
+  display: flex;
+  padding: 30px 5px;
+  justify-content: center;
 }
 
 .vis-team {
   width: 30%;
+  padding: 30px 30px;
+}
+.vis-team2 {
+  width: 70%;
   padding: 30px 30px;
 }
 
