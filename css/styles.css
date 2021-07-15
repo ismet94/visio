@@ -10,11 +10,30 @@ nav {
   display: flex;
   height: 120px;
 }
-  .vis-nav-logo {
+.vis-nav-logo {
     width: 30%;
     margin: auto;
-  }
-  .vis-nav-logo2 {
+}
+.vis-burger-menu {
     width: 30%;
     margin: auto;
+}
+.vis-right{
+    float: right;
+}
+
+
+.vis-main {
+  display: flex;
+  height: auto;
+}
+
+.vis-main-para {
+  width: 70%;
+  margin: auto;
+}
+
+.vis-main-icons {
+  width: 30%;
+  margin: auto;
 }
