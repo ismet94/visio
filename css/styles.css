@@ -83,3 +83,28 @@ h2.nav-sec {
   line-height: 1;
   letter-spacing: -1px;
 }
+
+.vis-nav-sec-btn-container {
+  display: flex;
+  margin: auto;
+}
+
+.vis-sec-nav-btn {
+  width: 50%;
+  margin: auto;
+  padding: 30px 0px;
+}
+
+a.vis-sec-nav-btn-left {
+  background: #244AC2;
+  padding: 10px;
+  margin: 0px 11px 0px 0px;
+  display: block;
+}
+
+a.vis-sec-nav-btn-right {
+  background: #244AC2;
+  padding: 10px;
+  margin: 0px 0px 0px 0px;
+  display: block;
+}
