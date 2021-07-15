@@ -132,13 +132,13 @@ section.vis-team-container {
 }
 
 .vis-team {
-  width: 80%;
+  width: 30%;
   padding: 30px 30px;
+  margin: auto;
 }
 
 .vis-team-block1 {
   border-top: 1.5px solid gray;
-  width: 30%;
 }
 
 p.vis-team-head {
