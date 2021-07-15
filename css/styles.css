@@ -8,10 +8,13 @@ body {
 
 nav {
   display: flex;
-  padding: 30px;
-  width: 80%;
-  margin: auto;
+  height: 120px;
 }
   .vis-nav-logo {
-      width: 30%;
+    width: 30%;
+    margin: auto;
   }
+  .vis-nav-logo2 {
+    width: 30%;
+    margin: auto;
+}
