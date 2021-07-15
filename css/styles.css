@@ -10,32 +10,26 @@ nav {
   display: flex;
   height: 120px;
 }
-.vis-nav-logo {
+.vis-nav-logo{
     width: 30%;
     margin: auto;
 }
-.vis-burger-menu {
+.vis-burger-menu{
     width: 30%;
     margin: auto;
 }
-.vis-right{
+svg.vis-right{
     float: right;
 }
-
-
-
-.vis-main {
+.vis-main{
   display: flex;
   height: auto;
 }
-
-
-.vis-main-para {
+.vis-main-para{
   width: 70%;
   margin: auto;
 }
-
-.vis-main-icons {
+.vis-main-icons{
   width: 30%;
   margin: auto;
 }
