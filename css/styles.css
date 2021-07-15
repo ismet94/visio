@@ -54,3 +54,32 @@ svg.vis-right{
   margin: auto;
   padding: 30px;
 }
+
+section.vis-sec-nav {
+  display: flex;
+  height: auto;
+  width: 80%;
+  margin: auto;
+}
+
+.vis-sec-nav-box {
+  width: 30%;
+  margin: auto;
+  padding: 30px;
+}
+
+.vis-sec-nav-item {
+  background: #061C2C;
+  color: white;
+  padding: 26px;
+}
+
+h2.nav-sec {
+  margin: auto;
+  padding: 15px 140px 0px 0px;
+  font-family: helvetica;
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -1px;
+}
