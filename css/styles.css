@@ -1,3 +1,13 @@
 * { 
   box-sizing: border-box; 
   }
+
+/* Navigation Styles */
+
+nav {
+  display: flex;
+  height: 200px;
+}
+  .vis-nav-logo {
+      width: 30%;
+  }
