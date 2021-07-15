@@ -1,12 +1,16 @@
 * { 
   box-sizing: border-box; 
   }
-
+body {
+    margin: 0;
+}
 /* Navigation Styles */
 
 nav {
   display: flex;
-  height: 200px;
+  padding: 30px;
+  width: 80%;
+  margin: auto;
 }
   .vis-nav-logo {
       width: 30%;
