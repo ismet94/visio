@@ -129,6 +129,7 @@ section.vis-team-container {
   display: flex;
   padding: 30px 5px;
   margin: 50px 0px;
+  justify-content: center;
 }
 
 .vis-team {
