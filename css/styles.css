@@ -138,6 +138,7 @@ section.vis-team-container2 {
   padding: 30px 5px;
   justify-content: center;
   padding: 0px 5px 30px 5px;
+  margin: 0px 0px 50px 0px;
 }
 
 .vis-team {
@@ -190,3 +191,28 @@ p.vis-team-para {
   width: 75%;
   padding-top: 20px;
 }
+
+span.vis-team-para2 {
+  color: white;
+  width: 75%;
+  font-size: 15px;
+}
+
+.vis-team-table {
+  display: flex;
+  padding-top: 30px;
+}
+
+.vis-team-table-item {
+  padding: 20px 0px;
+}
+a.blue-text {
+  background: #29A4E6;
+  color: white;
+  cursor: context-menu;
+  padding: 4px;
+  font-family: helvetica;
+  font-size: 26px;
+  font-weight: 100;
+}
+
