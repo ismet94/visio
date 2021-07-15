@@ -222,9 +222,22 @@ section.vis-icons-container {
   display: flex;
   justify-content: center;
   margin: 80px 10px;
+  align-items: center;
 }
 
 .vis-icon-item {
   width: 30%;
   text-align: center;
+}
+
+img.vis-icon-size {
+  width: 170px;
+}
+
+img.vis-icon-size2 {
+  width: 245px;
+}
+
+img.vis-icon-size3 {
+  width: 230px;
 }
