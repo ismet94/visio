@@ -7,6 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
      <!-- Linked google fonts into webpage -->
+     <script>
+       var $slider = $(".slider"), $bullets = $(".bullets");
+		function calculateHeight(){
+			var height = $(".slide.active").outerHeight();
+			$slider.height(height);
+		}
+
+		$(window).resize(function() {
+			calculateHeight();
+		    clearTimeout($.data(this, 'resizeTimer'));
+		});
+		
+		function resetSlides(){
+			$(".slide.inactive").removeClass("inactiveRight").removeClass("inactiveLeft");
+		}
+
+		function gotoSlide($activeSlide, $slide, className){
+			 $activeSlide.removeClass("active").addClass("inactive "+className);
+			 $slide.removeClass("inactive").addClass("active");
+			 calculateHeight();
+			 resetBullets();
+			 setTimeout(resetSlides, 300);
+		}
+
+		$(".next").on("click", function(){
+			 var $activeSlide = $(".slide.active"),
+				 $nextSlide = $activeSlide.next(".slide").length != 0 ? $activeSlide.next(".slide") : $(".slide:first-child");
+				 console.log($nextSlide);
+				 gotoSlide($activeSlide, $nextSlide, "inactiveLeft");
+		});
+		$(".previous").on("click",  function(){
+			 var $activeSlide = $(".slide.active"),
+				 $prevSlide = $activeSlide.prev(".slide").length != 0 ? $activeSlide.prev(".slide") : $(".slide:last-child");
+
+				 gotoSlide($activeSlide, $prevSlide, "inactiveRight");
+		});
+		$(document).on("click", ".bullet", function(){
+			if($(this).hasClass("active")){
+				return;
+			}
+			var $activeSlide = $(".slide.active");
+			var currentIndex = $activeSlide.index();
+			var targetIndex = $(this).index();
+			console.log(currentIndex, targetIndex);
+			var $theSlide = $(".slide:nth-child("+(targetIndex+1)+")");
+			gotoSlide($activeSlide, $theSlide, currentIndex > targetIndex ? "inactiveRight" : "inactiveLeft");
+		})
+		function addBullets(){
+			var total = $(".slide").length, index = $(".slide.active").index();
+			for (var i=0; i < total; i++){
+				var $bullet = $("<div>").addClass("bullet");
+				if(i==index){
+					$bullet.addClass("active");	
+				}
+				$bullets.append($bullet);
+			}
+		}
+		function resetBullets(){
+			$(".bullet.active").removeClass("active");
+			var index = $(".slide.active").index()+1;
+			console.log(index);
+			$(".bullet:nth-child("+index+")").addClass("active");
+		}
+		addBullets();
+		calculateHeight();	
+     </script>
 </head>
 <body>
   <nav>
@@ -26,6 +92,32 @@
     
   </nav>
 
+
+  <div class="slider">
+	  <div class="arrows">
+	    <a class="previous" href="#">&#xf053;</a>
+	    <a class="next" href="#">&#xf054;</a>
+	  </div>
+	  <div class="slides">
+			<div class="slide active blue" data-icon="&#xf0ac;">
+				<h2>Timezones</h2>
+				<p>Clocks+ helps you break the barriers of space and time to get information for any city you like. You can search for and organise your favorite cities so that you can easily find out the correct local time.</p>
+				<a target="_blank" href="https://itunes.apple.com/gb/app/clocks+/id937380413?mt=8">Check me out</a>
+			</div>
+			<div class="slide white" data-icon="&#xf0f3;">
+				<h2>Alarms</h2>
+				<p>Nobody wants to miss out on important events, but sometimes, it’s hard to find the time in another city. Clocks+ lets you set alarms for your favorite cities in a simple and intuitive way.</p>
+				<a target="_blank" href="https://itunes.apple.com/gb/app/clocks+/id937380413?mt=8">Start the Clock</a>
+			</div>
+			<div class="slide red" data-icon="&#xf013;">
+				<h2>Widgets/Today Extension</h2>
+				<p>Clocks+ wouldn’t be a modern app without Widgets. Your favorite cities appear in the Today View with just a swipe down, for quick glancing, Did we mention that they look awesome, too?</p>
+				<a target="_blank" href="https://itunes.apple.com/gb/app/clocks+/id937380413?mt=8">Download on AppStore</a>
+			</div>
+		</div>
+		<div class="bullets">
+		</div>
+	</div>
 
   <section class="vis-main">
     <div class="vis-main-para">
@@ -378,9 +470,9 @@
         <li>5th Floor  92 Rivonia Road</li>
         <li>Wierda Valley</li>
         <li>Sandton  2196</li>
-        <li>Tel:  <a href="tel:+ 27 11 245 8900">+ 27 11 245 8900</a></li>
+        <li>Tel:  <a href="tel:+ 27 11 245 8900" class="footer-text">+ 27 11 245 8900</a></li>
         <li>Fax:  +27 11 245 8915</li>
-        <li><a href="emailto:info@visiofund.co.za">info@visiofund.co.za</a></li>
+        <li><a href="emailto:info@visiofund.co.za" class="footer-text">info@visiofund.co.za</a></li>
       </ul>
     </div>
     <div class="footer-col">
