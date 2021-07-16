@@ -241,3 +241,99 @@ img.vis-icon-size2 {
 img.vis-icon-size3 {
   width: 230px;
 }
+
+
+section.vis-newsletter {
+  display: block;
+  margin: 30px 0px;
+}
+
+.vis-newsletter-border {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1.5px solid gainsboro;
+  width: 80%;
+  margin: auto;
+  padding: 30px 20px 10px 20px;
+}
+
+.vis-newsletter-item {
+  width: 30%;
+}
+
+.vis-newsletter-item2 {
+  width: 47%;
+}
+p.vis-newsletter-text {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #bbbbbb;
+}
+
+input.vis-newsletter-input {
+  width: 350px;
+  height: 35px;
+  background: whitesmoke;
+  border: navajowhite;
+  padding: 10px;
+}
+a.vis-newsletter-btn {
+  width: 25px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-family: helvetica;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin: 0px 19px;
+  font-size: 14px;
+}
+
+
+footer.vis-footer {
+  display: block;
+  margin: 30px 5px;
+}
+
+.vis-footer-border {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-top: 1.5px solid gainsboro;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.footer-col {
+  width: 30%;
+}
+
+p.footer-text {
+  font-size: 12px;
+  color: #bbbbbb;
+}
+
+ul.footer-list {
+  list-style: none;
+  line-height: 1.5;
+  color: #bbbbbb;
+  font-family: helvetica;
+  font-size: 12px;
+}
+
+.footer-col-inner {
+  display: flex;
+}
+.footer-col-inner-item {
+  width: 50%;
+  padding: 10px;
+}
+
+a.footer-col-link-text {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: helvetica;
+  color: #bbbbbb;
+}
