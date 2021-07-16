@@ -29,6 +29,7 @@ p {
   transition: all .3s;
   perspective: 900px;
   transform-style: preserve-3d;
+  height: 700px;
 }
 .slider .previous, .slider .next{
   font-family: "FontAwesome";
