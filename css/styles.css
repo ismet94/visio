@@ -22,12 +22,6 @@ p {
 
 /* Slider */
 
-h2{
-  font-weight: 300;
-  font-size: 3vw;
-  padding: 20px 0;
-}
-
 .slider{
   position: relative;
   width: 100%;
