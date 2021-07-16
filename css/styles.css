@@ -69,6 +69,7 @@ a.prev {
   position: absolute;
   top: 41%;
   overflow: hidden;
+  font-family: helvetica;
 }
 .numbertext {
   color: #f2f2f2;
