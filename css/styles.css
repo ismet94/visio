@@ -19,18 +19,13 @@ p {
   color: #fff;
 }
 
+img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  height: 700px;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
 }
 
 /* Next & previous buttons */
@@ -39,8 +34,8 @@ p {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
+  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -105,13 +100,18 @@ p {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .4} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .4} 
   to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 
 /* Navigation Styles */
