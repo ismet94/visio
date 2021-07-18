@@ -83,7 +83,7 @@ a.prev {
 .dot-container {
   position: relative;
   margin-top: -70px;
-  margin-left: 80%;
+  margin-left: 90%;
 }
 
 .dot {
@@ -91,14 +91,14 @@ a.prev {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #ffffff6b;
 }
 
 .fade {
@@ -138,21 +138,28 @@ nav {
 svg.vis-right{
     float: right;
 }
+
 .vis-main {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px auto;
-  align-items: flex-start;
+    display: flex;
+    justify-content: right;
+    margin: 40px auto;
+    align-items: flex-start;
+    padding: 30px;
+    width: 80%;
 }
+
 .vis-main-para {
-  width: 30%;
+  width: 45%;
   margin: auto;
+  padding: 30px;
 }
 .vis-main-icons {
   width: 20%;
   margin: auto;
   padding: 30px;
+  display: table;
 }
+
 
 section.vis-sec-nav {
   display: flex;
@@ -247,6 +254,7 @@ section.vis-team-container2 {
 .vis-team2 {
   width: 60%;
   padding: 30px 30px;
+  margin: auto;
 }
 
 .vis-team-block1 {
@@ -349,7 +357,7 @@ section.vis-newsletter {
 
 .vis-newsletter-border {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   border-top: 1.5px solid gainsboro;
   width: 80%;
@@ -452,13 +460,123 @@ nav {
 section.vis-sec-nav {
     width: 95%;
 }
+.vis-main {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
 .vis-newsletter-border {
-  width: 97%;
+  width: 95%;
 }
 .vis-footer-border {
   width: 97%;
 }
 .vis-icon-item {
   width: 30%;
+}
+}
+
+@media(max-width: 1440px) {
+
+}
+@media(max-width: 1282px) {
+a.vis-sec-nav-btn-left {
+    height: 50px;
+}
+a.vis-sec-nav-btn-right {
+  height: 50px;
+}
+
+}
+
+@media(max-width: 1024px) {
+  .vis-main-icons {
+    width: 20%;
+  }
+  .vis-footer-border {
+    justify-content: space-between;
+  }
+  .vis-newsletter-border {
+    flex-direction: column;
+}
+.text {
+  bottom: 50%;
+  width: 34%;
+  top: 36%;
+}
+}
+
+@media(max-width: 768px) {
+  .vis-nav-logo {
+  width: 50%;
+}
+section.vis-sec-nav {
+  flex-direction: column;
+}
+.text {
+  width: 43%;
+  top: 32%;
+}
+.prev, .next {
+  top: 40%;
+}
+
+.vis-main {
+  flex-direction: column;
+}
+.vis-main-para {
+  width: 95%;
+}
+section.vis-team-container {
+  flex-direction: column;
+}
+.vis-team {
+  width: 95%;
+  margin: auto;
+}
+section.vis-team-container2 {
+  flex-direction: column;
+}
+.vis-team-table {
+  flex-direction: column;
+}
+.vis-team2 {
+  width: 95%;
+}
+section.vis-icons-container {
+  flex-direction: column;
+}
+input.vis-newsletter-input {
+  margin-bottom: 15px;
+}
+
+a.vis-newsletter-btn {
+  display: block;
+  margin: auto;
+  width: 150px;
+  text-align: center;
+}
+.vis-footer-border {
+  flex-direction: column;
+}
+.footer-col {
+  margin: auto;
+}
+p.footer-text {
+  text-align: center;
+}
+ul.footer-list {
+  text-align: center;
+}
+.footer-col-inner {
+  flex-direction: column;
+}
+.footer-col-inner-item {
+  width: 100%;
+  text-align: center;
+}
+a.footer-col-link-text {
+  text-align: center;
 }
 }
