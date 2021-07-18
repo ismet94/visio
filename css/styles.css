@@ -81,9 +81,9 @@ a.prev {
 
 
 .dot-container {
-  position: absolute;
-  right: 150px;
-  bottom: 33px;
+  position: relative;
+  margin-top: -70px;
+  margin-left: 80%;
 }
 
 .dot {
@@ -141,13 +141,12 @@ svg.vis-right{
 .vis-main {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 40px auto;
   align-items: flex-start;
 }
 .vis-main-para {
-  width: 40%;
+  width: 30%;
   margin: auto;
-  padding: 30px;
 }
 .vis-main-icons {
   width: 20%;
@@ -441,4 +440,25 @@ a.footer-col-link-text {
 a.footer-text {
   color: #bbbbbb;
   text-decoration: none;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 1550px) { 
+nav {
+    width: 100%;
+}
+section.vis-sec-nav {
+    width: 95%;
+}
+.vis-newsletter-border {
+  width: 97%;
+}
+.vis-footer-border {
+  width: 97%;
+}
+.vis-icon-item {
+  width: 30%;
+}
 }
