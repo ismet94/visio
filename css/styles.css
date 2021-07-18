@@ -379,7 +379,8 @@ p.vis-newsletter-text {
 }
 
 input.vis-newsletter-input {
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   height: 35px;
   background: whitesmoke;
   border: navajowhite;
@@ -508,11 +509,14 @@ a.vis-sec-nav-btn-right {
 }
 
 @media(max-width: 768px) {
-  .vis-nav-logo {
+.vis-nav-logo {
   width: 50%;
 }
 section.vis-sec-nav {
   flex-direction: column;
+}
+.dot-container {
+  margin-left: 75%;
 }
 .text {
   width: 43%;
@@ -524,9 +528,13 @@ section.vis-sec-nav {
 
 .vis-main {
   flex-direction: column;
+  width: 100%;
 }
 .vis-main-para {
   width: 95%;
+}
+.vis-sec-nav-box {
+  width: 100%;
 }
 section.vis-team-container {
   flex-direction: column;
@@ -561,8 +569,10 @@ a.vis-newsletter-btn {
   flex-direction: column;
 }
 .footer-col {
-  margin: auto;
+    margin: auto;
+    width: 100%;
 }
+
 p.footer-text {
   text-align: center;
 }
