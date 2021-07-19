@@ -150,12 +150,10 @@ svg.vis-right{
 }
 
 .vis-main-para {
-  width: 45%;
   margin: auto;
   padding: 30px;
 }
 .vis-main-icons {
-  width: 20%;
   margin: auto;
   padding: 30px;
   display: table;
@@ -498,6 +496,9 @@ a.vis-sec-nav-btn-right {
   .vis-main-icons {
     width: 20%;
   }
+  .vis-main {
+    width: 100%;
+}
   .vis-footer-border {
     justify-content: space-between;
   }
