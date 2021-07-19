@@ -60,7 +60,7 @@ a.prev {
   font-size: 16px;
   padding: 25px 12px;
   bottom: 50%;
-  width: 29%;
+  width: 30%;
   text-align: right;
   left: -103px;
   z-index: 99;
@@ -70,6 +70,7 @@ a.prev {
   top: 41%;
   overflow: hidden;
   font-family: helvetica;
+  height: 65px;
 }
 .numbertext {
   color: #f2f2f2;
@@ -479,7 +480,9 @@ section.vis-sec-nav {
 }
 
 @media(max-width: 1440px) {
-
+  .text {
+    width: 37%;
+  }
 }
 @media(max-width: 1282px) {
 a.vis-sec-nav-btn-left {
@@ -503,8 +506,14 @@ a.vis-sec-nav-btn-right {
 }
 .text {
   bottom: 50%;
-  width: 34%;
   top: 36%;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(
+180deg, #ffffff, #ffffff,#ffffff, #ffffffde);
+  z-index: 9999;
 }
 }
 
@@ -521,6 +530,7 @@ section.vis-sec-nav {
 .text {
   width: 43%;
   top: 32%;
+  left: -74px;
 }
 .prev, .next {
   top: 40%;
@@ -535,6 +545,15 @@ section.vis-sec-nav {
 }
 .vis-sec-nav-box {
   width: 100%;
+}
+a.vis-sec-nav-btn-left {
+  height: auto;
+}
+a.vis-sec-nav-btn-left.spc {
+  height: auto;
+}
+a.vis-sec-nav-btn-right {
+  height: auto;
 }
 section.vis-team-container {
   flex-direction: column;
@@ -551,6 +570,23 @@ section.vis-team-container2 {
 }
 .vis-team2 {
   width: 95%;
+}
+
+.vis-icon-item {
+  width: 100%;
+}
+.vis-newsletter-item {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.vis-newsletter-item2 {
+  width: 100%;
+  text-align: center;
+}
+
+ul.footer-list {
+  padding: 0;
 }
 section.vis-icons-container {
   flex-direction: column;
@@ -589,4 +625,10 @@ ul.footer-list {
 a.footer-col-link-text {
   text-align: center;
 }
+}
+
+@media(max-width: 425px) {
+  .vis-main-icons {
+    margin: 0;
+  }
 }
