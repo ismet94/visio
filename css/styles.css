@@ -509,13 +509,7 @@ a.vis-sec-nav-btn-right {
   bottom: 50%;
   top: 36%;
 }
-nav {
-  position: sticky;
-  top: 0;
-  background-image: linear-gradient(
-180deg, #ffffff, #ffffff,#ffffff, #ffffffde);
-  z-index: 9999;
-}
+
 }
 
 @media(max-width: 768px) {
